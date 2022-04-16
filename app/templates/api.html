@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {%block title%}API{%endblock%} {% block
+template %}
+<style>
+  nav {
+    background-image: none;
+  }
+  span {
+    margin-left: 2rem;
+  }
+
+  .digit {
+    color: rgb(1, 67, 189);
+    margin-left: 0;
+  }
+</style>
+
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h2>Uso de la api</h2>
+      <hr />
+      Haz una solicitud GET a <code>/api/&lt;isbn&gt;</code> donde
+      <code>&lt;isbn&gt;</code> es el isbn del libro.
+      <hr />
+      Ejemplo de respuesta json
+      <br />
+      <code
+        >{<br />
+        <span>"title": "Juan",</span> <br /><span
+          >"author": "Juan",</span
+        >
+        
+        <br />
+        
+        <span>"year": 
+          <span class="digit">2022</span>,
+        </span> 
+        
+        <br />
+        
+        <span>"isbn": "123",</span>
+
+        <br />
+        
+        <span>"ratingsCount": 
+          <span class="digit">28</span>,
+        </span>
+        
+        <br />
+        
+        <span>"averageRating": 
+          <span class="digit">1.5</span>
+        </span>
+        
+        <br />}
+      </code>
+    </div>
+  </div>
+</div>
+{%endblock%}
